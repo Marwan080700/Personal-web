@@ -68,9 +68,9 @@ nav ul li a:hover {
 
 /* content styling */
 .container {
-  width: 100vh;
+  width: 150vh;
   border: 1px solid #cecece;
-  margin: 100px auto;
+  margin: 50px auto;
   padding: 30px 50px;
   border-radius: 10px;
   box-shadow: 0 0 20px #cecece;
@@ -89,28 +89,39 @@ nav ul li a:hover {
 .container .shortcut {
   display: flex;
   align-items: center;
+  height: 2rem;
+  margin-top: 50px;
 }
 
-.container .shortcut .min-menu-left {
-  flex: 40%;
+.container .shortcut .s-left {
+  flex: 25%;
 }
 
-.container .shortcut .min-menu-left a {
+.container .shortcut .s-left a {
   text-decoration: none;
+  align-items: center;
   background-color: black;
   color: white;
   padding: 5px 20px;
-  border-radius: 15px;
-  margin-right: 10px;
+  border-radius: 10px;
 }
 
-.container .shortcut .min-menu-right {
-  flex: 60%;
-  margin-right: 50px;
+.container .shortcut .s-right {
+  flex: 75%;
+}
+
+.container .shortcut .s-right a {
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: black;
+  font-weight: 600;
 }
 
 .container .social-media {
   padding-top: 30px;
+  margin-top: 30px;
 }
 
 .container .social-media a {
@@ -127,8 +138,13 @@ nav ul li a:hover {
 }
 
 .container .content-left {
-  flex: 50%;
+  flex: 60%;
   margin: 20px 50px 0 0;
+  padding-left: 50px;
+}
+
+.container .content-left p {
+  margin-top: 30px;
 }
 
 .container .content-left h2 {
@@ -136,7 +152,7 @@ nav ul li a:hover {
 }
 
 .container .content-right {
-  flex: 50%;
+  flex: 40%;
   align-items: center;
   justify-items: center;
 }
