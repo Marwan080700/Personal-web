@@ -125,6 +125,10 @@ nav ul li a:hover {
 }
 
 .container .social-media a {
+  color: black;
+}
+
+.container .social-media a {
   margin-right: 15px;
 }
 
