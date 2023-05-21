@@ -34,6 +34,10 @@ nav ul li a {
   font-size: 20px;
 }
 
+nav .nav-left a.active {
+  color: orangered;
+}
+
 nav ul li a:hover {
   color: orangered;
 }
@@ -159,4 +163,10 @@ nav ul li a:hover {
   flex: 40%;
   align-items: center;
   justify-items: center;
+}
+
+.container .content-right .image-profile img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
 }

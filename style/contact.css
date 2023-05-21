@@ -28,7 +28,7 @@ form div h1 {
   text-align: center;
   justify-content: center;
   font-weight: 600;
-  text-shadow: 0 5px 15px #686868;
+  text-shadow: 0 0 15px black;
 }
 
 form div label {
