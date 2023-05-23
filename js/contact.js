@@ -6,7 +6,7 @@ function submitData() {
   let massage = document.getElementById("input-massage").value;
 
   if (name == "") {
-    return alert("Nama Harus Diisi!");
+    return alert("Nama Harsu Diisi!");
   } else if (email == "") {
     return alert("Email Harus Diisi!");
   } else if (phone == "") {
@@ -17,10 +17,8 @@ function submitData() {
     return alert("Massage Harus Diisi!");
   }
 
-  let emailRecev = "irsyad88888@gmail.com";
-
   let a = document.createElement("a");
-  a.href = `mailto:${emailRecev}?subject=${subject}&body=Halo perkenalkan nama saya ${name}, ${massage}. jika ada masalah terlebih silahkan hubungi nomor ini ${phone}, TerimaKasih`;
+  a.href = `mailto:${email}?subject=${subject}&body=Halo perkenalkan nama saya ${name}, ${massage}. jika ada masalah terlebih silahkan hubungi nomor ini ${phone}, TerimaKasih`;
   a.click();
 
   console.log(name);
