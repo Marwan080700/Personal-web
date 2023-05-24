@@ -56,6 +56,10 @@ nav ul li a:hover {
   margin-right: 30px;
 }
 
+.nav-right button i {
+  font-size: 20px;
+}
+
 .nav-right a {
   text-decoration: none;
   background-color: black;
@@ -169,4 +173,122 @@ nav ul li a:hover {
   width: 100%;
   border-radius: 10px 10px 0 0;
   object-fit: cover;
+}
+
+#barsmenuicon {
+  display: none;
+}
+
+.hamburger-nav-container {
+  display: grid;
+  text-decoration: none;
+  display: none;
+}
+
+.hamburger-nav-container a {
+  display: flex;
+  font-size: 25px;
+  text-decoration: none;
+  background-color: #cecece;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 1px solid white;
+}
+
+.hamburger-nav-container .hamburger-active {
+  background-color: orangered;
+  color: white;
+}
+
+.hamburger-nav-container button {
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.hamburger-nav-container button:hover {
+  background-color: orangered;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+/* ! media queries responsive*/
+
+/* laptop */
+@media (max-width: 1366px) {
+  .container {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .content-left .social-media {
+    display: flex;
+    flex: 100%;
+    justify-content: center;
+  }
+  .container .shortcut .s-left {
+    flex: 0%;
+  }
+
+  .content-left .shortcut .s-right {
+    margin-left: 20px;
+  }
+}
+
+/* tablet */
+@media (max-width: 900px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  #barsmenuicon {
+    display: block;
+  }
+
+  .container {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .content-left .social-media {
+    display: flex;
+    flex: 100%;
+    justify-content: center;
+  }
+
+  .content-left .shortcut .s-right {
+    margin-left: 20px;
+  }
+}
+
+/* mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+
+  .container .content-right .image-profile {
+    width: 70%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+  }
+
+  .content-left .shortcut .s-right svg {
+    width: 20%;
+  }
 }

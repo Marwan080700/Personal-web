@@ -1,6 +1,13 @@
 <html>
   <head>
     <title>Contact Me</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style/contact.css" />
   </head>
   <body>
@@ -9,19 +16,36 @@
       <div class="nav-left">
         <ul>
           <li><img src="assets/image/logo.png" alt="Logo" /></li>
-          <li>
-            <a href="index.html">Home</a>
+          <li class="hamburger-menu">
+            <a class="active" href="index.html">Home</a>
           </li>
-          <li>
+          <li class="hamburger-menu">
             <a href="blog.html">My Project</a>
           </li>
         </ul>
       </div>
 
-      <div class="nav-right">
+      <!-- hamburger toggle -->
+      <div class="nav-right hamburger-menu">
         <a href="contact.html">Contact Me</a>
       </div>
+      <div class="nav-right" id="barsmenuicon">
+        <button
+          style="background-color: transparent; border: none; cursor: pointer"
+          onclick="openNav()"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
     </nav>
+
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" class="hamburger-active">
+        <button>Contact Me</button>
+      </a>
+    </div>
 
     <!-- form content -->
     <form>
@@ -54,11 +78,12 @@
         ><textarea name="" id="input-massage" cols="30" rows="10"></textarea>
       </div>
 
-      <div>
+      <div class="btn-input-form">
         <button type="button" onclick="submitData()">Submit</button>
       </div>
     </form>
 
     <script src="js/contact.js"></script>
+    <script src="js/navbarIcon.js"></script>
   </body>
 </html>

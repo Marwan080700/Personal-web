@@ -14,24 +14,43 @@
   </head>
 
   <body>
-    <!-- navbar content -->
-    <nav id="navigation">
+     <!-- navbar content -->
+     <nav id="navigation">
       <div class="nav-left">
         <ul>
           <li><img src="assets/image/logo.png" alt="Logo" /></li>
-          <li>
-            <a href="index.html">Home</a>
+          <li class="hamburger-menu">
+            <a class="active" href="index.html">Home</a>
           </li>
-          <li>
-            <a class="active"href="blog.html">My Project</a>
+          <li class="hamburger-menu">
+            <a href="blog.html">My Project</a>
           </li>
         </ul>
       </div>
-
-      <div class="nav-right">
+      
+<!-- hamburger toggle -->
+      <div class="nav-right hamburger-menu">
         <a href="contact.html">Contact Me</a>
       </div>
+      <div class="nav-right" id="barsmenuicon">
+          <button
+          style="background-color: transparent; border: none; cursor: pointer"
+          onclick="openNav()"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
     </nav>
+
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="index.html">Home</a>
+      <a href="blog.html" class="hamburger-active">Blog</a>
+      <a href="contact.html">
+        <button>
+          Contact Me
+        </button>
+      </a>
+    </div>
 
     <!-- content section -->
     <div class="blog">
@@ -307,5 +326,6 @@
     </script>
 
     <script src="js/blog.js"></script>
+    <script src="js/navbarIcon.js"></script>
   </body>
 </html>

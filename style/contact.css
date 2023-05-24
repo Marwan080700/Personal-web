@@ -12,8 +12,9 @@ body {
 .container {
   width: 500px;
 }
+
 form {
-  width: 40%;
+  width: 80%;
   margin: 30px auto;
   padding: 25px;
   border-radius: 10px;
@@ -38,9 +39,22 @@ form div label {
 
 form div input,
 select,
-textarea,
-button {
+textarea {
   box-shadow: 0 10px 20px #adacac;
+}
+
+form .btn-input-form {
+  text-align: right;
+}
+
+form .btn-input-form button {
+  color: white;
+  border: 1px solid black;
+  background-color: black;
+  padding: 8px 30px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: right;
 }
 
 input,
@@ -55,7 +69,7 @@ textarea {
   resize: none;
 }
 
-button {
+/* button {
   position: absolute;
   right: 30%;
   font-weight: 700;
@@ -65,7 +79,7 @@ button {
   padding: 6px 25px;
   border-radius: 15px;
   place-items: right;
-}
+} */
 
 /* navbar styling */
 
@@ -122,4 +136,106 @@ nav ul li a:hover {
 .nav-right a:hover {
   background-color: orangered;
   color: white;
+}
+
+.nav-right button {
+  font-size: 20px;
+}
+
+#barsmenuicon {
+  display: none;
+}
+
+.hamburger-nav-container {
+  display: grid;
+  text-decoration: none;
+  display: none;
+}
+
+.hamburger-nav-container a {
+  display: flex;
+  font-size: 25px;
+  text-decoration: none;
+  background-color: #cecece;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 1px solid white;
+}
+
+.hamburger-nav-container .hamburger-active {
+  background-color: orangered;
+  color: white;
+}
+
+.hamburger-nav-container button {
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.hamburger-nav-container button:hover {
+  background-color: orangered;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+/* ! media queries responsive*/
+
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 100%;
+  }
+  form {
+    width: 70%;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+  }
+}
+
+/* tablet */
+@media (max-width: 900px) {
+  html {
+    font-size: 60%;
+  }
+
+  form {
+    width: 60%;
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  #barsmenuicon {
+    display: block;
+  }
+}
+
+/* mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 60%;
+  }
+
+  form {
+    width: 50%;
+    margin: 5px auto;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+  }
 }
