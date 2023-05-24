@@ -289,9 +289,6 @@ textarea {
 
 /* mobile */
 @media (max-width: 450px) {
-  html {
-    font-size: 70%;
-  }
   .blog .form-blog .form-container {
     width: 40%;
     display: flex;

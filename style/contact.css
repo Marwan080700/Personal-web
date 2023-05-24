@@ -188,26 +188,8 @@ nav ul li a:hover {
 
 /* ! media queries responsive*/
 
-/* laptop */
-@media (max-width: 1366px) {
-  html {
-    font-size: 100%;
-  }
-  form {
-    width: 70%;
-    margin: 30px auto;
-    padding: 25px;
-    border-radius: 10px;
-    margin-bottom: 50px;
-  }
-}
-
 /* tablet */
 @media (max-width: 900px) {
-  html {
-    font-size: 60%;
-  }
-
   form {
     width: 60%;
     margin: 10px auto;
@@ -227,10 +209,6 @@ nav ul li a:hover {
 
 /* mobile */
 @media (max-width: 450px) {
-  html {
-    font-size: 60%;
-  }
-
   form {
     width: 50%;
     margin: 5px auto;
