@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>testimon</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/testimonial.css" />
+  </head>
+  <body>
+    <!-- navbar section -->
+
+    <nav>
+      <div class="nav-left">
+        <ul>
+          <li>
+            <img src="assets/image/logo.png" alt="logo" />
+          </li>
+          <li class="item-collapse">
+            <a  href="index.html">Home</a>
+          </li>
+          <li class="item-collapse">
+            <a href="blog.html">Blog</a>
+          </li>
+          <li class="item-collapse">
+            <a class="active" href="testimonial.html">Blog</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-right item-collapse">
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-right" id="barsmenuicon">
+        <button
+          style="background-color: transparent; border: none; cursor: pointer"
+          onclick="openNav()"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- responsive navbar -->
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="testimonial.html" class="hamburger-active">testimonial</a>
+    </div>
+
+    <!-- section testimonial section -->
+    <div class="container">
+      <h1>My Testimonial</h1>
+      <section class="testimonials" id="testimonials">
+      <!--   <div class="testimonial">
+          <img
+            src="assets/images/irsyad.jpg"
+            alt="profile-foto"
+            class="profile-testimonial"
+          />
+          <p class="quote">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt,
+            atque numquam ipsam ut eos nihil, nulla aspernatur alias voluptatem
+            fugit quae nisi neque quasi provident culpa tempore sunt. Earum,
+            doloremque?
+          </p>
+          <p class="author">>- Muhammad Irsyad Marwan</p>
+        </div>
+      </section> -->
+    </div>
+    <script src="js/navbarIcon.js"></script>
+    <script src="js/testimonials.js"></script>
+  </body>
+</html>
