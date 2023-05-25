@@ -75,7 +75,7 @@ class CompanyTestimonials extends Testimonial {
 const testimonial1 = new AuthorTestimonials(
   "Mawar",
   "Mantapp!! Lanjutkan Karyamu",
-  "https:images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80=THR936&iss=sbi&q=imgurl:https%3A%2F%2Fimages.unsplash.com%2Fphoto-1494790108377-be9c29b29330%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D387%26q%3D80&pageurl=https%3A%2F%2Funsplash.com%2Fphotos%2FmEZ3PoFGs_k&pagetl=People+Spotlite+Pictures+%7C+Download+Free+Images+on+Unsplash&imgalt=closeup+photography+of+woman+smiling&imgsz=388x581&selectedindex=0&id=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1494790108377-be9c29b29330%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D387%26q%3D80&ccid=2hbcBYSw&mediaurl=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1494790108377-be9c29b29330%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D387%26q%3D80&exph=581&expw=387&vt=2&sim=11"
+  "https://plus.unsplash.com/premium_photo-1671586882920-8cd59c84cdfe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
 );
 const testimonial2 = new AuthorTestimonials(
   "Boejo",

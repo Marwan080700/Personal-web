@@ -14,38 +14,47 @@
     <link rel="stylesheet" href="style/testimonial.css" />
   </head>
   <body>
-    <!-- navbar section -->
-
-    <nav>
-      <div class="nav-left">
-        <ul>
-          <li>
-            <img src="assets/image/logo.png" alt="logo" />
-          </li>
-          <li class="item-collapse">
-            <a  href="index.html">Home</a>
-          </li>
-          <li class="item-collapse">
-            <a href="blog.html">Blog</a>
-          </li>
-          <li class="item-collapse">
-            <a class="active" href="testimonial.html">Blog</a>
-          </li>
-        </ul>
+       <!-- navbar content -->
+       <nav id="navigation">
+        <div class="nav-left">
+          <ul>
+            <li><img src="assets/image/logo.png" alt="Logo" /></li>
+            <li class="hamburger-menu">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="hamburger-menu">
+              <a href="blog.html">My Project</a>
+            </li>
+            <li class="hamburger-menu">
+              <a class="active" href="testimonial.html">Testimonial</a>
+            </li>
+          </ul>
+        </div>
+  
+  <!-- hamburger toggle -->
+        <div class="nav-right hamburger-menu">
+          <a href="contact.html">Contact Me</a>
+        </div>
+        <div class="nav-right" id="barsmenuicon">
+            <button
+            style="background-color: transparent; border: none; cursor: pointer"
+            onclick="openNav()"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+  
+      <div class="hamburger-nav-container" id="hamburger-nav-container">
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="testimonial.html" class="hamburger-active">testimonial</a>
+        <a href="contact.html">
+          <button>
+            Contact Me
+          </button>
+        </a>
       </div>
-
-      <div class="nav-right item-collapse">
-        <a href="contact.html">Contact</a>
-      </div>
-      <div class="nav-right" id="barsmenuicon">
-        <button
-          style="background-color: transparent; border: none; cursor: pointer"
-          onclick="openNav()"
-        >
-          <i class="fa-solid fa-bars"></i>
-        </button>
-      </div>
-    </nav>
 
     <!-- responsive navbar -->
     <div class="hamburger-nav-container" id="hamburger-nav-container">
