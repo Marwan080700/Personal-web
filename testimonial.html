@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="style/testimonial.css" />
   </head>
   <body>
-       <!-- navbar content -->
-       <nav id="navigation">
+      <!-- navbar content -->
+      <nav id="navigation">
         <div class="nav-left">
           <ul>
             <li><img src="assets/image/logo.png" alt="Logo" /></li>
@@ -32,17 +32,17 @@
         </div>
   
   <!-- hamburger toggle -->
-        <div class="nav-right hamburger-menu">
-          <a href="contact.html">Contact Me</a>
-        </div>
-        <div class="nav-right" id="barsmenuicon">
-            <button
-            style="background-color: transparent; border: none; cursor: pointer"
-            onclick="openNav()"
-          >
-            <i class="fa-solid fa-bars"></i>
-          </button>
-        </div>
+          <div class="nav-right hamburger-menu">
+            <a href="contact.html">Contact Me</a>
+          </div>
+          <div class="nav-right" id="barsmenuicon">
+              <button
+              style="background-color: transparent; border: none; cursor: pointer"
+              onclick="openNav()"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
       </nav>
   
       <div class="hamburger-nav-container" id="hamburger-nav-container">
@@ -65,8 +65,48 @@
     </div>
 
     <!-- section testimonial section -->
-    <div class="container">
+    <div class="container-rating">
       <h1>My Testimonial</h1>
+      <div class="container-stars">
+        <h2>Rating By Stars</h2>
+        <div class="rating-stars">
+          <!-- <input class="scale" id="scale0" type="radio" value="0" onclick="alltestimonials()" checked>
+          <label for="scale0" class="button">All <i class="fa-solid fa-star"></i></label>
+
+          <input class="scale" id="scale1" type="radio" value="1" onclick="filtertestimonials(1)">
+          <label for="scale1" class="button">1 <i class="fa-solid fa-star"></i></label>
+
+          <input class="scale" id="scale2" type="radio" value="1" onclick="filtertestimonials(2)">
+          <label for="scale2" class="button">2 <i class="fa-solid fa-star"></i></label>
+
+          <input class="scale" id="scale3" type="radio" value="1" onclick="filtertestimonials(3)">
+          <label for="scale3" class="button">3 <i class="fa-solid fa-star"></i></label>
+
+          <input class="scale" id="scale4" type="radio" value="1" onclick="filtertestimonials(4)">
+          <label for="scale4" class="button">4 <i class="fa-solid fa-star"></i></label>
+
+          <input class="scale" id="scale5" type="radio" value="1" onclick="filtertestimonials(5)">
+          <label for="scale5" class="button">5 <i class="fa-solid fa-star"></i></label> -->
+          <button value="0" class="star-btn-all" onclick="alltestimonials()">All 
+            <i class="fa-solid fa-star"></i>
+          </button>
+          <button value="1" class="star-btn-1" onclick="filtertestimonials(1)">
+            1 <i class="fa-solid fa-star"></i>
+          </button>
+          <button value="2" class="star-btn-2" onclick="filtertestimonials(2)">
+            2 <i class="fa-solid fa-star"></i>
+          </button>
+          <button value="3" class="star-btn-3" onclick="filtertestimonials(3)">
+            3 <i class="fa-solid fa-star"></i>
+          </button>
+          <button value="4" class="star-btn-4" onclick="filtertestimonials(4)">
+            4 <i class="fa-solid fa-star"></i>
+          </button>
+          <button value="5" class="star-btn-5" onclick="filtertestimonials(5)">
+            5 <i class="fa-solid fa-star"></i>
+          </button>
+        </div>
+      </div>
       <section class="testimonials" id="testimonials">
       <!--   <div class="testimonial">
           <img
