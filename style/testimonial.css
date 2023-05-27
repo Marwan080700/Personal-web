@@ -5,18 +5,27 @@
   align-items: center;
 }
 
+.container-rating .container-stars {
+  padding-left: 10%;
+  padding-right: 10%;
+  display: grid;
+  flex-direction: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-rating .container-stars h2 {
+  text-align: center;
+}
+
 .testimonials {
+  width: 100vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 30px;
   width: 100%;
-  gap: 30px;
-}
-
-.container-stars .rating-stars {
-  display: flex;
-  gap: 30px;
+  gap: 20px;
 }
 
 /* styling button */
@@ -27,6 +36,7 @@
   color: #fff;
   padding: 9px 20px;
   border-radius: 7px;
+  margin: 10px;
 }
 
 .container-stars .rating-stars button:hover {
@@ -77,9 +87,5 @@
 @media only screen and (max-width: 550px) {
   .testimonial {
     width: 80%;
-  }
-
-  .container-rating button {
-    width: auto;
   }
 }
