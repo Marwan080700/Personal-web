@@ -96,94 +96,94 @@
 // }
 // document.getElementById("testimonials").innerHTML = testimonialHTML;
 
-let testimonialsData = [
-  {
-    author: "Freya Jayawardana",
-    qoute: "Diperbaiki Lagi Layoutnya",
-    image:
-      "https://i.pinimg.com/originals/95/db/6b/95db6bc1116273d90a6e66ec232971e3.jpg",
-    rating: 1,
-  },
-  {
-    author: "Azizi Shafaa Asadel",
-    qoute: "Terlalu monoton",
-    image: "https://assets.ladiestory.id/gallery/1664269879-zee-jkt-48.jpg",
-    rating: 2,
-  },
-  {
-    author: "Shania Gracia",
-    qoute: "Tingkatkan Lagi Desainnya",
-    image:
-      "https://cdn-2.tstatic.net/tribunnews/foto/bank/images/gracia-jkt48.jpg",
-    rating: 3,
-  },
-  {
-    author: "Ujang Sarosa",
-    qoute: "Desain Yang Mantap!! ",
-    image:
-      "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-    rating: 5,
-  },
-  {
-    author: "Thomas Djarja",
-    qoute: "Bagus Sekali!!!",
-    image:
-      "https://images.unsplash.com/photo-1605462863863-10d9e47e15ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-    rating: 5,
-  },
-  {
-    author: "Mang Roy",
-    qoute: "Suka namun Duka",
-    image:
-      "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-    rating: 3,
-  },
-];
+// let testimonialsData = [
+//   {
+//     author: "Freya Jayawardana",
+//     qoute: "Diperbaiki Lagi Layoutnya",
+//     image:
+//       "https://i.pinimg.com/originals/95/db/6b/95db6bc1116273d90a6e66ec232971e3.jpg",
+//     rating: 1,
+//   },
+//   {
+//     author: "Azizi Shafaa Asadel",
+//     qoute: "Terlalu monoton",
+//     image: "https://assets.ladiestory.id/gallery/1664269879-zee-jkt-48.jpg",
+//     rating: 2,
+//   },
+//   {
+//     author: "Shania Gracia",
+//     qoute: "Tingkatkan Lagi Desainnya",
+//     image:
+//       "https://cdn-2.tstatic.net/tribunnews/foto/bank/images/gracia-jkt48.jpg",
+//     rating: 3,
+//   },
+//   {
+//     author: "Ujang Sarosa",
+//     qoute: "Desain Yang Mantap!! ",
+//     image:
+//       "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+//     rating: 5,
+//   },
+//   {
+//     author: "Thomas Djarja",
+//     qoute: "Bagus Sekali!!!",
+//     image:
+//       "https://images.unsplash.com/photo-1605462863863-10d9e47e15ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+//     rating: 5,
+//   },
+//   {
+//     author: "Mang Roy",
+//     qoute: "Suka namun Duka",
+//     image:
+//       "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+//     rating: 3,
+//   },
+// ];
 
-// function tuk mengambil semua data objek
+// // function tuk mengambil semua data objek
 
-function alltestimonials() {
-  let testimonialHtml = "";
+// function alltestimonials() {
+//   let testimonialHtml = "";
 
-  testimonialsData.forEach(function (item) {
-    testimonialHtml += `<div class="testimonial">
-    <img
-        src="${item.image}"
-        class="profile-testimonial"
-    />
-    <p class="quote">${item.qoute}</p>
-    <p class="author">- ${item.author}</p>
-    <p class="author">${item.rating} <i class="fa-solid fa-star"></i></p>
-</div>`;
-  });
-  document.getElementById("testimonials").innerHTML = testimonialHtml;
-}
+//   testimonialsData.forEach(function (item) {
+//     testimonialHtml += `<div class="testimonial">
+//     <img
+//         src="${item.image}"
+//         class="profile-testimonial"
+//     />
+//     <p class="quote">${item.qoute}</p>
+//     <p class="author">- ${item.author}</p>
+//     <p class="author">${item.rating} <i class="fa-solid fa-star"></i></p>
+// </div>`;
+//   });
+//   document.getElementById("testimonials").innerHTML = testimonialHtml;
+// }
 
-alltestimonials();
+// alltestimonials();
 
-// function tuk memfilter data berdasarlan rating
+// // function tuk memfilter data berdasarlan rating
 
-function filtertestimonials(rating) {
-  let testimonialHtml = "";
+// function filtertestimonials(rating) {
+//   let testimonialHtml = "";
 
-  const testimonialsfiltered = testimonialsData.filter(function (item) {
-    return item.rating === rating;
-  });
+//   const testimonialsfiltered = testimonialsData.filter(function (item) {
+//     return item.rating === rating;
+//   });
 
-  if (testimonialsfiltered.length === 0) {
-    testimonialHtml += `<h1> Data is not found!!</h1>`;
-  } else {
-    testimonialsfiltered.forEach(function (item) {
-      testimonialHtml += `<div class="testimonial">
-      <img
-          src="${item.image}"
-          class="profile-testimonial"
-      />
-      <p class="quote">${item.qoute}</p>
-      <p class="author">- ${item.author}</p>
-      <p class="author">${item.rating} <i class="fa-solid fa-star"></i></p>
-  </div>`;
-    });
-  }
-  document.getElementById("testimonials").innerHTML = testimonialHtml;
-}
+//   if (testimonialsfiltered.length === 0) {
+//     testimonialHtml += `<h1> Data is not found!!</h1>`;
+//   } else {
+//     testimonialsfiltered.forEach(function (item) {
+//       testimonialHtml += `<div class="testimonial">
+//       <img
+//           src="${item.image}"
+//           class="profile-testimonial"
+//       />
+//       <p class="quote">${item.qoute}</p>
+//       <p class="author">- ${item.author}</p>
+//       <p class="author">${item.rating} <i class="fa-solid fa-star"></i></p>
+//   </div>`;
+//     });
+//   }
+//   document.getElementById("testimonials").innerHTML = testimonialHtml;
+// }

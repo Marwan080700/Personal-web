@@ -5,19 +5,17 @@ function addBlog(event) {
 
   let name = document.getElementById("input-blog-title").value;
   let startDate = document.getElementById("input-start-date").value;
+  console.log(startDate);
   let endDate = document.getElementById("input-end-date").value;
   let desc = document.getElementById("input-blog-desc").value;
   let image = document.getElementById("input-blog-image").files;
 
-  // mengubah value tanggal menjadi number
+  // mengubah tanggal ke milisecond
   function getDifferentTime() {
     let dateFirst = new Date(startDate).getTime();
     // console.log(dateFirst);
     let dateLast = new Date(endDate).getTime();
     // console.log(dateLast);
-    // mili ke date
-    var date1 = new Date(dateFirst);
-    var date2 = new Date(dateLast);
 
     // deklarasi tanggal
     let hoursInDays = 24;
@@ -32,7 +30,8 @@ function addBlog(event) {
     // let distanceMinutes = Math.floor(distance / (milisecond * 60)); // 1/60000
     // let distanceSeconds = Math.floor(distance / milisecond); // 1/1000
 
-    const duration = date2 - date1; // selisih antara tanggal akhir dan awal dalam milisecond
+    const duration = dateLast - dateFirst; // selisih antara tanggal akhir dan awal dalam milisecond
+    console.log(duration);
 
     // variable penyimpan untuk mengatur satuan taggal
     const daysDiff = Math.floor(duration / (hoursInDays * 60 * 60 * 1000)); //mili to days
@@ -40,10 +39,10 @@ function addBlog(event) {
       duration / (daysInWeek * hoursInDays * 60 * 60 * 1000)
     ); // mili to week
     const monthDiff = Math.floor(
-      duration / (daysInMonth * 24 * 60 * 60 * 1000)
+      duration / (daysInMonth * hoursInDays * 60 * 60 * 1000)
     ); // mili to month
     const yearsDiff = Math.floor(
-      duration / (monthInYears * daysInMonth * 24 * 60 * 60 * 1000)
+      duration / (monthInYears * daysInMonth * hoursInDays * 60 * 60 * 1000)
     ); // mili to years
 
     // console.log(daysDiff + "hari");

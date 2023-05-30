@@ -14,47 +14,45 @@
     <link rel="stylesheet" href="style/testimonial.css" />
   </head>
   <body>
-      <!-- navbar content -->
-      <nav id="navigation">
-        <div class="nav-left">
-          <ul>
-            <li><img src="assets/image/logo.png" alt="Logo" /></li>
-            <li class="hamburger-menu">
-              <a href="index.html">Home</a>
-            </li>
-            <li class="hamburger-menu">
-              <a href="blog.html">My Project</a>
-            </li>
-            <li class="hamburger-menu">
-              <a class="active" href="testimonial.html">Testimonial</a>
-            </li>
-          </ul>
-        </div>
-  
-  <!-- hamburger toggle -->
-          <div class="nav-right hamburger-menu">
-            <a href="contact.html">Contact Me</a>
-          </div>
-          <div class="nav-right" id="barsmenuicon">
-              <button
-              style="background-color: transparent; border: none; cursor: pointer"
-              onclick="openNav()"
-            >
-              <i class="fa-solid fa-bars"></i>
-            </button>
-          </div>
-      </nav>
-  
-      <div class="hamburger-nav-container" id="hamburger-nav-container">
-        <a href="index.html">Home</a>
-        <a href="blog.html">Blog</a>
-        <a href="testimonial.html" class="hamburger-active">testimonial</a>
-        <a href="contact.html">
-          <button>
-            Contact Me
-          </button>
-        </a>
+    <!-- navbar content -->
+    <nav id="navigation">
+      <div class="nav-left">
+        <ul>
+          <li><img src="assets/image/logo.png" alt="Logo" /></li>
+          <li class="hamburger-menu">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="hamburger-menu">
+            <a href="blog.html">My Project</a>
+          </li>
+          <li class="hamburger-menu">
+            <a class="active" href="testimonial.html">Testimonial</a>
+          </li>
+        </ul>
       </div>
+
+      <!-- hamburger toggle -->
+      <div class="nav-right hamburger-menu">
+        <a href="contact.html">Contact Me</a>
+      </div>
+      <div class="nav-right" id="barsmenuicon">
+        <button
+          style="background-color: transparent; border: none; cursor: pointer"
+          onclick="openNav()"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="testimonial.html" class="hamburger-active">testimonial</a>
+      <a href="contact.html">
+        <button>Contact Me</button>
+      </a>
+    </div>
 
     <!-- responsive navbar -->
     <div class="hamburger-nav-container" id="hamburger-nav-container">
@@ -87,28 +85,49 @@
 
           <input class="scale" id="scale5" type="radio" value="1" onclick="filtertestimonials(5)">
           <label for="scale5" class="button">5 <i class="fa-solid fa-star"></i></label> -->
-          <button value="0" class="star-btn-all" onclick="alltestimonials()">All 
+          <button value="0" class="star-btn-all" onclick="getAllTestimonials()">
+            All
             <i class="fa-solid fa-star"></i>
           </button>
-          <button value="1" class="star-btn-1" onclick="filtertestimonials(1)">
+          <button
+            value="1"
+            class="star-btn-1"
+            onclick="getFilteredTestimonials(1)"
+          >
             1 <i class="fa-solid fa-star"></i>
           </button>
-          <button value="2" class="star-btn-2" onclick="filtertestimonials(2)">
+          <button
+            value="2"
+            class="star-btn-2"
+            onclick="getFilteredTestimonials(2)"
+          >
             2 <i class="fa-solid fa-star"></i>
           </button>
-          <button value="3" class="star-btn-3" onclick="filtertestimonials(3)">
+          <button
+            value="3"
+            class="star-btn-3"
+            onclick="getFilteredTestimonials(3)"
+          >
             3 <i class="fa-solid fa-star"></i>
           </button>
-          <button value="4" class="star-btn-4" onclick="filtertestimonials(4)">
+          <button
+            value="4"
+            class="star-btn-4"
+            onclick="getFilteredTestimonials(4)"
+          >
             4 <i class="fa-solid fa-star"></i>
           </button>
-          <button value="5" class="star-btn-5" onclick="filtertestimonials(5)">
+          <button
+            value="5"
+            class="star-btn-5"
+            onclick="getFilteredTestimonials(5)"
+          >
             5 <i class="fa-solid fa-star"></i>
           </button>
         </div>
       </div>
       <section class="testimonials" id="testimonials">
-      <!--   <div class="testimonial">
+        <!--   <div class="testimonial">
           <img
             src="assets/images/irsyad.jpg"
             alt="profile-foto"
@@ -121,10 +140,10 @@
             doloremque?
           </p>
           <p class="author">>- Muhammad Irsyad Marwan</p>
-        </div>
-      </section> -->
+        </div>-->
+      </section>
     </div>
     <script src="js/navbarIcon.js"></script>
-    <script src="js/testimonials.js"></script>
+    <script src="js/ajax.js"></script>
   </body>
 </html>
