@@ -1,4 +1,4 @@
-.container-rating {
+/* .container-rating {
   padding: 50px 0;
   display: flex;
   flex-direction: column;
@@ -29,7 +29,7 @@
 }
 
 /* styling button */
-
+/* 
 .container-stars .rating-stars button {
   background-color: black;
   border: none;
@@ -82,10 +82,10 @@
   #barsmenuicon {
     display: block;
   }
-}
+} */
 
-@media only screen and (max-width: 550px) {
+/* @media only screen and (max-width: 550px) {
   .testimonial {
     width: 80%;
   }
-}
+} */

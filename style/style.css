@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 * {
   font-family: "Quicksand", sans-serif;
@@ -7,11 +7,11 @@
 body {
   margin: 0;
   padding: 0;
-}
+} */
 /* -------------------------------------------------------------- */
 /* navbar styling */
 /* -------------------------------------------------------------- */
-
+/* 
 nav {
   width: 100%;
   background-color: #ececee;
@@ -77,12 +77,12 @@ nav ul li a:hover {
 .nav-right a:hover {
   background-color: orangered;
   color: white;
-}
+} */
 
 /* -------------------------------------------------------------- */
 /* content styling */
 /* -------------------------------------------------------------- */
-
+/* 
 .container {
   width: 80%;
   border: 1px solid #cecece;
@@ -237,7 +237,7 @@ nav ul li a:hover {
 /* -------------------------------------------------------------- */
 /* ! media queries responsive*/
 
-/* tablet */
+/* tablet
 @media only screen and (max-width: 768px) {
   .hamburger-menu {
     display: none;
@@ -269,10 +269,10 @@ nav ul li a:hover {
   .content-left .shortcut .s-right {
     margin-left: 20px;
   }
-}
+} */
 
 /* mobile */
-@media only screen and (max-width: 550px) {
+/* @media only screen and (max-width: 550px) {
   .container .content-right .image-profile {
     width: 70%;
     border-radius: 10px 10px 0 0;
@@ -282,4 +282,4 @@ nav ul li a:hover {
   .content-left .shortcut .s-right svg {
     width: 20%;
   }
-}
+} */
