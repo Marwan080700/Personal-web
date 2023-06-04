@@ -17,13 +17,16 @@ nav {
   background-color: #ececee;
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 10vh;
+  position: relative;
 }
 
 nav ul {
-  display: flex;
   list-style-type: none;
-  align-items: center;
+  display: flex;
+  align-content: center;
+  margin: 0;
 }
 
 nav ul li {
