@@ -31,7 +31,7 @@
   background-color: #c0ea6a;
 }
 
-.navbar-brand .btn:hover {
+.container .btn:hover {
   background-color: #eff5d2;
   color: #000000;
   border: none;

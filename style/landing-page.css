@@ -133,10 +133,12 @@
   .container-card .container-card-content .card-body-text {
     padding-top: 30px !important;
   }
-  /* project content */
-  .my-project-container .card-content {
+
+  /* my project */
+
+  .my-project-container .card-content i {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto auto;
   }
 }
 
